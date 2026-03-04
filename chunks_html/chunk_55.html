@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/doc/rapport/Rapport.pdf – page 28</h3>
+<pre>CHAPITRE 4. RÉALISATIONS 29 par bash sont donc échappés (par exemple, '$' devient '\$') lorsque le serveur reçoit ce code, ce qui empêche d'insérer des commandes shell dans la commande de lancement d'Audacy. Ensuite, une des failles de sécurité potentielles serait de lancer le serveur en tant que super-utilisateur (root). Ceci est empêché par le script du service audacy-webapp : si l'utilisateur est root, le service n'est pas lancé. Ceci a cependant pour désavantage de ne pas lancer le service audacy-webapp automatiquement au démarrage du serveur, puisque seul root possède ce droit. Certains mots clés pouvant être interprétés par Audacy constituent des risques de sé- curité potentiels. Suite à une recherche de ces mots clés dans la documentation de Maude de la part de Mr Giorgetti , nous savons qu'il s'agit des mots clés 'ls', 'cd', 'in', 'quit', 'pwd', 'pushd', 'popd', 'load' et 'eof'</pre>
+</body>
+</html>

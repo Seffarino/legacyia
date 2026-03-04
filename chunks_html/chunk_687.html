@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/implementation/validation/regtest.sh – page ?</h3>
+<pre>];then     quick_flag=true fi # Display how to use this script if the current working directory isn't 'theories' if [ $(basename $(pwd)) != "theories" ]; then     echo "Usage: you need to run this script from the theories directory"     exit 1 fi # Find the test files (test.sh) in the current directory and order them by name test_files=$(find -name "test.sh" | sort) # Save the current directory into 'pwd' pwd=$(pwd) # Move into each test files directory for f in $test_files; do     # Display the name of the current directory and move into it     echo -n "$(dirname $f)"     cd $(dirname $f)          # If there is an example file in this directory, display it     for example in $(ls /opt/audacy-webapp/app/static/examples); do         for file in $(ls); do             if [ $file == $example</pre>
+</body>
+</html>

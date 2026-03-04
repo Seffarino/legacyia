@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
+<pre>req.body.maude_code */ app.use(express.bodyParser()) // Static files are located in app/static .use(express.static(__dirname + "/static")) // Root page (views/home.ejs) .get("/", function(req, res) {          // Retrieve examples and templates to display in the 'Load' drop-down list     var examplesList = getExamplesList();     var templatesList = getTemplatesList();          // Render the 'home.ejs' template     res.render("home.ejs", {         audacy_stdout: "",          audacy_stderr: "",          examples: examplesList,         templates: templatesList,         prefix: PREFIX     }); }) /* Handling of AJAX POST request 'req' sent when audacy is launched from the user     interface. The result is computed in 'res'. */ .post("/audacy", function(req, res) {          // Retrieve data from</pre>
+</body>
+</html>

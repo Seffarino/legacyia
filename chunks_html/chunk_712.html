@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/scripts/audacy-webapp_init_script.sh – page ?</h3>
+<pre>RETVAL=$?     else         RETVAL=1     fi } stop() {     echo "Shutting down $NAME"     rm -f $APPLICATION_DIR/$PIDFILE     pkill node     RETVAL=$? } restart() {     echo "Restarting $NAME"     stop     start } status() {     if [ -f $APPLICATION_DIR/$PIDFILE ]; then         echo "$NAME is running"     else         echo "$NAME is not running"     fi     RETVAL=0 } case "$1" in     start)         start         ;;     stop)         stop         ;;     restart)         restart         ;;     status)         status         ;;     *)         echo "Usage: {start|stop|restart|status}"         exit 1         ;; esac exit $RETVAL</pre>
+</body>
+</html>

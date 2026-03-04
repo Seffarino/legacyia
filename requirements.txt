@@ -1,0 +1,16 @@
+langchain-ollama
+langchain-community
+langchain-chroma
+langchain-text-splitters
+chromadb
+pypdf
+langchain
+tqdm
+matplotlib
+scikit-learn
+plotly
+pandas
+esprima
+langsmith
+pydantic
+docker-py

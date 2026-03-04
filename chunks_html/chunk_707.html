@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/scripts/install.sh – page ?</h3>
+<pre>since they are in /opt) echo "Creating /opt/audacy..." sudo mkdir /opt/audacy echo "Creating /opt/maude..." sudo mkdir /opt/maude echo "Creating /opt/audacy-webapp..." sudo mkdir /opt/audacy-webapp # Get ownership on the installation directories echo "Changing ownership on the installation directories..." sudo chown $(id -un):$(id -gn) /opt/audacy /opt/maude /opt/audacy-webapp # Change directory to l3vm/audacy (root of the project) cd l3vm/audacy # Copy only the files needed from audacy (implementation/ directory) into /opt/audacy echo "Copying audacy files into /opt/audacy..." mkdir /opt/audacy/spc svn export implementation/spc /opt/audacy/spc --force -q # Copy maude into /opt/maude echo "Copying maude files into /opt/maude..." svn export maude /opt/maude --force -q # Copy only the files</pre>
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
+<pre>var result = [];          for (var i=0; i < files.length; i++) {         var fileExtension = files[i].split(".").pop();                  if (fileExtension === "maude") {             result.push({                 name: files[i].split(".")[0],                  content: fs.readFileSync("static/examples/" + files[i])});         }     }          return result; } /* This function returns the list of templates in static/templates, used by the  * "load" button of the user interface (home.ejs) */ function getTemplatesList() {     var result = [];     result.push({         name: "Default template",         id: "default_template",         content: fs.readFileSync("static/templates/default_template.maude")});     result.push({         name: "Template IO",         id: "template_io",</pre>
+</body>
+</html>

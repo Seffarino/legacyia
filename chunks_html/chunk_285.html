@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
+<pre>writeLog(req, req.body.maude_code, stdout, stderr);                      // Send the results via a JSON object (to the web interface) or via email         res.send(JSON.stringify({"audacy_stdout": stdout, "audacy_stderr": stderr}));         if (email != "") {          sendResultToEmail(email, req.body.maude_code, stdout, stderr);         }        }      ); }) // Documentation page (views/documentation.ejs) .get("/documentation", function(req, res) {     res.render("documentation.ejs", {         prefix: PREFIX     }); }) // About page (views/about.ejs) .get("/about", function(req, res) {     res.render("about.ejs", {         prefix: PREFIX     }); }) /* Handling of the /metadata GET request for rise4fun  * URL to use to test rise4fun service at http://rise4fun.com/dev :  *</pre>
+</body>
+</html>

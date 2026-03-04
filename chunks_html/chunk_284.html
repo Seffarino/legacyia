@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
+<pre>is computed in 'res'. */ .post("/audacy", function(req, res) {          // Retrieve data from request     var email = req.body.email;     var maude_code = req.body.maude_code;     var waiting_time = req.body.waiting_time;          // Escape potentially dangerous characters in the maude_code of the user     maude_code = escape_shell_characters(maude_code);          /* Create a pipe that redirects the user's maude code into         /opt/maude/audacy_with_process.sh */     var audacy_process =       exec(        'echo "' + maude_code + '" | /opt/maude/audacy_with_process.sh '          + waiting_time,        function(error, stdout, stderr) {         // Save the input and results in logs         writeLog(req, req.body.maude_code, stdout, stderr);                      // Send the results via a</pre>
+</body>
+</html>

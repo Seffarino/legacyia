@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/implementation/validation/regtest.sh – page ?</h3>
+<pre>do         for file in $(ls); do             if [ $file == $example ]; then                 echo -n " [$file]"                 break             fi         done     done          echo -n ": "          # If 'oracle.txt' is missing, display an error message and skip the test     if [ ! -f oracle.txt ]; then         echo "Skipped (oracle.txt is missing)"     else                  # Get the pseudo-execution time of the test from the 'rewrites' line in the 'oracle.txt' file         time=$(egrep -o "^rewrites: [0-9]+ in [0-9]+ms cpu" oracle.txt | egrep -o "[0-9]+ms" | egrep -o "[0-9]+")                  # If it is missing from the 'oracle.txt' file, display an error message and skip the test         if [ -z $time ]; then             echo "Skipped (time information is missing in oracle.txt)"</pre>
+</body>
+</html>

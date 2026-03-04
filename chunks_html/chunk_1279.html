@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/scripts/install.sh – page ?</h3>
+<pre>[ $? -eq 0 ]; then     # If it is, do nothing     echo "Subversion is already installed" else     # Otherwise, install it via apt-get (needs sudo password)     echo "Subversion is not installed"     echo "Installing subversion..."     sudo apt-get install subversion -y fi # Checkout the whole project into the current working directory (needs svn password) echo "Checking out https://dept-info.univ-fcomte.fr/svn/l3vm..." svn checkout https://dept-info.univ-fcomte.fr/svn/l3vm --username "$svn_login" # Continue only if the checkout was successful if [ $? -ne 0 ]; then     echo "Checkout failed, aborting the installation"     exit 1 fi # Create the installation directories (needs sudo password since they are in /opt) echo "Creating /opt/audacy..." sudo mkdir /opt/audacy echo "Creating</pre>
+</body>
+</html>

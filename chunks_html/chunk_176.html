@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/doc/rapport/Rapport.pdf – page 18</h3>
+<pre>CHAPITRE 4. RÉALISATIONS 19 // Im por tat ion du module ' http ' var http = require ( ' http ') ; // Cr é ation du serveur web http . c r e a t e S e r v e r ( /* Fonction à ex é cuter lorsque le serveur re ç oit une * requ ê te */ function ( request , response ) { /* Sp é cification du header de la r é ponse HTTP ( texte * brut et status OK (200) ) */ response . writeHead ( 200 , { ' Content - Type ': ' text / plain '}) ; /* Contenu de la r é ponse ( ici , un simple texte * ' Hello World ') */ response . end ( ' Hello World \n ') ; } // Le serveur é coute sur le port 8080 ) . listen (8000) ; /* On affiche un message dans la console confirmant que le * serveur est lanc é */ console . log ( ` ` Running at http :// localhost :8000 ' ') ; Figure 4.1   Exemple de serveur HTTP utilisant Node.js</pre>
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
+<pre>directory += "user_examples/";         }         // Else, write the input and results into log/no_error/         else {             directory += "no_error/";         }     }          directory += clientIP + "-" + dateFormat + "/";          // Check if the log directories exist and create them if necessary     fs.exists("../log", function(exists) {         if (!exists) {             fs.mkdirSync("../log", 0777);         }     });          fs.exists("../log/user_examples", function(exists) {         if (!exists) {             fs.mkdirSync("../log/user_examples", 0777);         }     });          fs.exists("../log/no_error", function(exists) {         if (!exists) {             fs.mkdirSync("../log/no_error", 0777);         }     });          fs.exists("../log/other",</pre>
+</body>
+</html>

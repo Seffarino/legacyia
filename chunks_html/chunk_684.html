@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<h3>legacy_code/maude/audacy_with_process.sh – page ?</h3>
+<pre># AUDACY LAUNCH # ################# # Create a temporary file that will contain stderr from audacy err_file=$(mktemp) # Launch audacy with the timeout specified in argument, save stdout in 'out' and # redirect stderr to 'err_file' out=$(echo -e "$input" | timeout $max_computation_time /opt/maude/audacy_without_process.sh 2>$err_file) # If the previous command returns 124, then a timeout occurred if [ $? -eq 124 ]; then     echo "Timeout ($max_computation_time seconds elapsed)" 1>&2     rm $err_file     exit 1 fi # Save stderr from audacy into 'err' and remove the temporary file err=$(< $err_file) rm $err_file ################ # POST-PROCESS # ################ # Only display result clauses in 'out' out=$(echo "$out" | egrep "clause") # Display "No output" if there aren't any result clauses</pre>
+</body>
+</html>
