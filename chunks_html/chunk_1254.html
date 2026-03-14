@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/maude/audacy_with_process.sh – page ?</h3>
-<pre>#!/bin/bash # # This script launches audacy and processes the results, or quits if the computation  # takes longer than the maximum computation time specified in argument # # Usage displays how to use the script usage() {     echo "Usage: $0 maximum_computation_time (in seconds)" } # Display how to use this script if there is no argument if [ $# != 1 ]; then     usage     exit 1 fi # Save the maximum computation time specified in argument into 'max_computation_time' max_computation_time=$1 # TODO: Insert here param.sh # Save the input into 'input' (sent from a pipe into stdin, for example : # echo "maude code" | bash audacy_with_process.sh 2 input=$(</dev/stdin) ############### # PRE-PROCESS # ############### # Quit and display an error if the input contains reserved keywords # TODO:</pre>
-</body>
-</html>

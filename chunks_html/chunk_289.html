@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
-<pre>"Version": "1.9",                 "Outputs": [{                     "MimeType": "text/plain",                     "Value": "# Output\n\n" + stdout + "\n\n# Errors\n\n" + stderr                   }]             };                          // Send the JSON object             res.setHeader("Content-Type", "application/json");             res.send(JSON.stringify(run));         }     ); }) // We redirect to / if the request isn't valid .use(function(req, res, next) {     res.redirect("/"); }) // The web server runs on port 8080 .listen(8080); // This function saves the input and results into the log/ directory function writeLog(req, maude_code, stdout, stderr) {          /* The directory in which the input and results are saved is formatted like       * this: clientIP-date-time      *</pre>
-</body>
-</html>

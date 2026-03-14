@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/maude/audacy_with_process.sh – page ?</h3>
-<pre># ############### # Quit and display an error if the input contains reserved keywords # TODO: Parsing for 'ls', 'cd', 'in' contains_reserved_keywords=$(echo "$input" | egrep "quit|pwd|pushd|popd|load|eof") if [ -n "$contains_reserved_keywords" ]; then     # Note about redirections: echo displays text in stdout, that's why we redirect     # stdout (1) into stderr (2) to display the error message in stderr. We use     # 1>&2, the '&' meaning that we want to use the stderr file descriptor. If we     # used 1>2, stdout would be written into a file named '2'.     echo "Error: input contains reserved keywords" 1>&2     exit 1 fi # Add the load 'spc-before.maude' instruction at the beginning of the input spc_before="\n\nload /opt/audacy/spc/spc-trace/spc-before.maude\n\n"</pre>
-</body>
-</html>

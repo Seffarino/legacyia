@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/implementation/validation/regtest.sh – page ?</h3>
-<pre>if [ -z $time ]; then             echo "Skipped (time information is missing in oracle.txt)"         else                          # If the '--quick' option is not used or the test is a quick one, execute the test             if ! $quick_flag || ($quick_flag && [ $time -lt $max_quick_time ]); then                 bash $(basename $f)                                  # Replace the \n characters in the output by real newlines                 sed -e 's/,\\n/,\n/g' out.txt > out2.txt                 mv out2.txt out.txt                                  # Get the result clause from the oracle and the test output (all lines except the                 # 6 first and the last)                 oracleResultClause=$(tail -n +7 oracle.txt | head -n -1)                 outResultClause=$(tail -n +7</pre>
-</body>
-</html>

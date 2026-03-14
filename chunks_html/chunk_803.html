@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/doc/rapport/Rapport.pdf – page 40</h3>
-<pre>. Le  chier audacy/audacy-webapp/app/app.js contient le traitement de cette re- quête du côté serveur, dans la fonction .post("/audacy", function(req,res) {...}) . La requête POST contient un objet JSON contenant plusieurs informations : le code saisi par l'utilisateur, le temps maximum de calcul et s'il faut renvoyer le résultat à l'in- terface web ou par email. Après avoir récupéré ces informations, on sécurise les éventuels caractères shell du code saisi par l'utilisateur avant de lancer le calcul, ce qui empêche d'interpréter d'éventuelles commandes shell malicieusement ajoutées par l'utilisateur (par exemple, '$' devient '\$'). Le calcul est ensuite lancé en faisant appel à la méthode exec() du module child_process (intégré à Node.js), le principe étant de rediriger le code Maude en entrée du script /opt/maude/audacy_with_process.sh . La  gure A.11 est un exemple de cet appel, le code saisi étant "code maude" et le temps maximum de calcul étant 120 secondes</pre>
-</body>
-</html>

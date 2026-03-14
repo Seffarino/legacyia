@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/scripts/audacy-webapp_init_script.sh – page ?</h3>
-<pre>#!/bin/bash # ### BEGIN INIT INFO # Provides:             audacy-webapp # Required-Start:       $syslog $remote_fs # Required-Stop:        $syslog $remote_fs # Should-Start:         $local_fs # Should-Stop:          $local_fs # Default-Start:        2 3 4 5 # Default-Stop:         0 1 6 # Short-Description:    Audacy Web Application # Description:          Audacy Web Application ### END INIT INFO NAME="Audacy web application" APPLICATION_DIR=/opt/audacy-webapp/app PIDFILE=audacy-webapp_running start() {     # Do not start the service as root     if [ $(id -un) != "root" ]; then         echo "Starting $NAME"         cd $APPLICATION_DIR         touch $PIDFILE         ../node/bin/node app.js &         RETVAL=$?     else         RETVAL=1     fi } stop() {     echo "Shutting down $NAME"     rm</pre>
-</body>
-</html>

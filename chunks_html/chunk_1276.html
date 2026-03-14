@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/scripts/update.sh – page ?</h3>
-<pre>service /etc/init.d/audacy-webapp stop # Move into audacy/ cd audacy # Copy the files from the working directory to /opt/audacy, /opt/maude and /opt/audacy-webapp echo "Updating /opt/audacy..." svn export implementation/spc /opt/audacy/spc --force -q echo "Updating /opt/maude..." svn export maude /opt/maude --force -q echo "Updating /opt/audacy-webapp..." svn export audacy-webapp/app /opt/audacy-webapp/app --force -q svn export audacy-webapp/node /opt/audacy-webapp/node --force -q # Make /opt/maude/audacy_with_process.sh, /opt/maude/maude.linux64, /opt/maude/audacy_without_process.sh and # /opt/audacy-webapp/node/bin/node executable again chmod u+x /opt/maude/audacy_with_process.sh chmod u+x /opt/maude/maude.linux64 chmod u+x /opt/maude/audacy_without_process.sh chmod u+x</pre>
-</body>
-</html>

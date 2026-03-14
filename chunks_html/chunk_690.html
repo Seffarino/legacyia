@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/implementation/validation/regtest.sh – page ?</h3>
-<pre>-n +7 oracle.txt | head -n -1)                 outResultClause=$(tail -n +7 out.txt | head -n -1)                                  # Check if there is any difference between the result clause from the                 # oracle and the result clause from the output                 R=$(diff -U 0 -Loracle -Loutput <(echo "$oracleResultClause") <(echo "$outResultClause"))                                  # If the 2 result clauses are equals, display "Success"                 if [ -z "$R" ]; then                      echo "Success"                                      # Else, display "Failure" and the differences between the 2 clauses                 else                      echo -e "Failure\n"                     echo "$R"                 fi                              # Skip the test if the</pre>
-</body>
-</html>

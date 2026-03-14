@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
-<pre>+= "<h1>Output</h1>" + stdout;     htmlResult += "<h1>Errors</h1>" + stderr;     htmlResult = htmlResult.split("\n").join("<br />");          // Configuration of the mail     var mailOptions = {         from: "Audacy Result <no-reply@univ-fcomte.fr>",         to: email,         subject: "Audacy Result",         generateTextFromHTML: true,         html: htmlResult     };     // Send the mail     transport.sendMail(mailOptions, function(error, response){         transport.close();     }); } /* This function retrieves the list of examples in static/examples, used by the   * "load" button of the user interface (home.ejs) */ function getExamplesList() {     var files = fs.readdirSync("static/examples");     var result = [];          for (var i=0; i < files.length; i++) {         var</pre>
-</body>
-</html>

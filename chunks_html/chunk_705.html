@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/scripts/install.sh – page ?</h3>
-<pre>#!/bin/bash # # This script installs Audacy, maude, and the Audacy web application into # /opt/audacy, /opt/maude and /opt/audacy-webapp. # # It also creates a new service, 'audacy-webapp', that can be used to start, # stop and restart the web application. # # Usage displays how to use the script usage() {     echo "Usage: $0 -u svn_login" } # Display usage if there isn't 2 arguments if [ $# != 2 ]; then     usage     exit 1 fi # Display usage if the first argument isn't "-u" if [ $1 != "-u" ]; then     usage     exit 1 fi # Save the svn login into 'svn_login' svn_login=$2 # Check if subversion is already installed echo "Checking if subversion is installed..." svn_is_installed=$(which svn) if [ $? -eq 0 ]; then     # If it is, do nothing     echo "Subversion is already installed" else</pre>
-</body>
-</html>

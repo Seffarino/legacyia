@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/scripts/update.sh – page ?</h3>
-<pre>#!/bin/bash # # This script updates Audacy, maude, and the Audacy web application located in # /opt/audacy, /opt/maude and /opt/audacy-webapp. # # It also restarts the service 'audacy-webapp'. # # Display how to use this script if the current working directory isn't 'l3vm' if [ $(basename $(pwd)) != "l3vm" ]; then     echo "Usage: you need to run this script from the l3vm working directory"     exit 1 fi # Get the latest version from the subversion repository echo "Getting the latest version from the svn repository..." svn update # Continue only if the update was successful if [ $? -ne 0 ]; then     echo "SVN update failed, aborting the application update"     exit 1 fi # Stop the 'audacy-webapp' service /etc/init.d/audacy-webapp stop # Move into audacy/ cd audacy # Copy the files from the</pre>
-</body>
-</html>

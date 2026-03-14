@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
-<pre>in which the input and results are saved is formatted like       * this: clientIP-date-time      * For example: 127.0.0.1-20131210-09h17m54s */     var clientIP = req.header("x-forwarded-for") || req.connection.remoteAddress;          // Do nothing if we can't retrieve the client IP address     if (!clientIP) {         return;     }     // Correctly format the date of the request     var date = new Date();     var year = date.getFullYear();     var month = date.getMonth() + 1;     var day = date.getDate();     var hour = date.getHours();     var minute = date.getMinutes();     var second = date.getSeconds();          var dateFormat = year + "" + addZeroIfNeeded(month) + "" + addZeroIfNeeded(day);     dateFormat += "-" + addZeroIfNeeded(hour) + "h" + addZeroIfNeeded(minute) + "m" +</pre>
-</body>
-</html>

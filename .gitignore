@@ -1,3 +1,7 @@
 legacy_code
 chroma_langchain_db
 .venv
+logs/*
+chunks_hmtl/*
+chunks_hmtl/
+logs/

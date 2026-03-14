@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/doc/rapport/Rapport.pdf – page 41</h3>
-<pre>ANNEXE A. DOCUMENTATION DÉDIÉE AU DÉVELOPPEUR 42 A.7 Traitements serveur sur l'entrée et le résultat Les traitements serveur sur l'entrée et le résultat sont e ectués par le script shell maude/audacy_with_process.sh . Ce script est organisé en cinq parties. 1. La première partie consiste simplement à véri er qu'on a bien indiqué le temps de calcul maximum en paramètre, et à récupérer l'entrée standard dans la variable input . 2. La deuxième partie e ectue les pré-traitements sur l'entrée standard : on com- mence par véri er qu'elle ne contient pas de mots clés interdits ('quit', 'pwd', 'pushd', etc.). Si c'est le cas on quitte en a chant "Error : input contains reser- ved keywords" dans la sortie d'erreur standard. Sinon, on ajoute l'instruction de chargement du  chier spc-before.maude au début d' input , puis on cherche si le code saisi utilise IO ou pas via l'expression régulière " [ ˆa-zA-Z]sort.* Ints.* \. "</pre>
-</body>
-</html>

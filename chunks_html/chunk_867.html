@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
-<pre>: add a 0 at the   * beginning if 'value' is < 10 */ function addZeroIfNeeded(value) {     if (value < 10) {         return "0" + value;     }     else {         return "" + value;     } } // Sending of input and results via email function sendResultToEmail(email, maude_code, stdout, stderr) {          /* We use the mail.femto-st.fr SMTP mail server.      * SMTP options are listed at the following address:      * https://github.com/andris9/Nodemailer#setting-up-smtp */     var transport = nodemailer.createTransport("SMTP", {         host: "mail.femto-st.fr",         port: 25     });     // Content of the mail (html)     var htmlResult = "<h1>Maude code</h1>" + maude_code;     htmlResult += "<h1>Output</h1>" + stdout;     htmlResult += "<h1>Errors</h1>" + stderr;     htmlResult =</pre>
-</body>
-</html>

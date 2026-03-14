@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/doc/rapport/Rapport.pdf – page 31</h3>
-<pre>. Fina- lement, le problème était dû au fait que l'application ait été installée dans un sous- répertoire de la racine du serveur http://disc.univ-fcomte.fr , alors qu'elle était installée au départ à la racine de frontag. Les requêtes AJAX étaient donc envoyées à http://disc.univ-fcomte.fr au lieu de http://disc.univ-fcomte.fr/audacy , ce qui renvoyait une erreur. Pour résoudre ce problème, nous avons ajouté une variable globale PREFIX dans les  - chiers javascript client et serveur de l'application ( audacy/audacy-webapp/app/app.js et audacy/audacy-webapp/app/static/js/script.js ), qu'il faut adapter à l'installa- tion de l'application : si elle est installée à la racine, alors PREFIX doit valoir "", si elle est installée dans le sous-répertoire audacy/, alors PREFIX doit valoir "/audacy". 32</pre>
-</body>
-</html>

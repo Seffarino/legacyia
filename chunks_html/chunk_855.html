@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
-<pre>/*   * This file contains all the javascript code of the Node.js web application. The  * web server runs on port 8080.  */ /* Prefix to prepend to the URLs  * '/audacy' if the server is located at http://disc.univ-fcomte.fr/audacy   * '' if the server is located at http://localhost:8080 */ var PREFIX = "/audacy"; //var PREFIX = ""; // Loading of node modules used by the web application var exec = require("child_process").exec; var express = require("express"); var fs = require("fs"); var nodemailer = require("nodemailer"); var app = express(); /* Use the request body parsing middleware provided by express in order to  * access JSON object directly from the requests. For example: req.body.maude_code */ app.use(express.bodyParser()) // Static files are located in app/static</pre>
-</body>
-</html>

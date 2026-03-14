@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/maude/audacy_with_process.sh – page ?</h3>
-<pre>'out' out=$(echo "$out" | egrep "clause") # Display "No output" if there aren't any result clauses if [ -z "$out" ]; then     out="No output" fi # Display the number of advisories and warnings in 'err', or "No error" if there aren't any number_of_advisories=$(echo "$err" | egrep "Advisory" | wc -l) number_of_warnings=$(echo "$err" | egrep "Warning" | wc -l) if [ -z "$err" ]; then     err="No error" else     err="Number of advisories: $number_of_advisories\nNumber of warnings: $number_of_warnings" fi ########### # RESULTS # ########### # Display 'out' in stdout and 'err' in stderr echo -e "$out" echo -e "$err" 1>&2 # Exit exit 0</pre>
-</body>
-</html>

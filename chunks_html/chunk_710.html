@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/scripts/uninstall.sh – page ?</h3>
-<pre>#!/bin/bash # # This script uninstalls Audacy, maude, and the Audacy web application located in # /opt/audacy, /opt/maude and /opt/audacy-webapp. # # It also removes the 'audacy-webapp' service from the system. # # Remove /opt/audacy, /opt/maude and /opt/audacy-webapp (needs sudo password) echo "Removing /opt/audacy..." sudo rm -rf /opt/audacy  echo "Removing /opt/maude..." sudo rm -rf /opt/maude  echo "Removing /opt/audacy-webapp..." sudo rm -rf /opt/audacy-webapp # Remove /etc/init.d/audacy-webapp (needs sudo password) /etc/init.d/audacy-webapp stop echo "Removing the audacy-webapp service..." sudo rm -f /etc/init.d/audacy-webapp # Exit echo "Done." exit 0</pre>
-</body>
-</html>

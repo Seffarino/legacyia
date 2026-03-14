@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/maude/audacy_with_process.sh – page ?</h3>
-<pre>at the beginning of the input spc_before="\n\nload /opt/audacy/spc/spc-trace/spc-before.maude\n\n" input="$spc_before$input" # Check if the input uses IO or not uses_io=$(echo "$input" | egrep "[^a-zA-Z]sort.* Ints.* \.") # If the input does not use IO ('uses_io' is empty), add the load 'spc.maude'  # instruction at the end of the input, otherwise add the load 'spcIO.maude' instruction # at the end if [ -z "$uses_io" ]; then     spc_after="\n\nload /opt/audacy/spc/spc-trace/spc.maude\n\n" else     spc_after="\n\nload /opt/audacy/spc/spc-trace/spcIO.maude\n\n" fi input="$input$spc_after" # Display input after pre-process (for debugging purposes) #echo -e "$input" ################# # AUDACY LAUNCH # ################# # Create a temporary file that will contain stderr from audacy</pre>
-</body>
-</html>

@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/audacy-webapp/app/app.js – page ?</h3>
-<pre>fs.mkdirSync("../log/no_error", 0777);         }     });          fs.exists("../log/other", function(exists) {         if (!exists) {             fs.mkdirSync("../log/other", 0777);         }     });          // Input is written in "input.maude" and results in "stdout.txt" and "stderr.txt"     fs.exists(directory, function(exists) {         if (!exists) {             fs.mkdir(directory, 0777, function() {                 fs.writeFile(directory + "input.maude", maude_code);                 fs.writeFile(directory + "stdout.txt", stdout);                 fs.writeFile(directory + "stderr.txt", stderr);             });         }     }); } /* Function used to correctly format the log directory : add a 0 at the   * beginning if 'value' is < 10 */ function addZeroIfNeeded(value) {     if</pre>
-</body>
-</html>

@@ -1,7 +1,0 @@
-
-<html>
-<body>
-<h3>legacy_code/implementation/validation/regtest.sh – page ?</h3>
-<pre>#!/bin/bash ##################################### # Script for non-regression testing # ##################################### # Changes: # - Echo a different string when the test fails. # - Echo the path to the test folder. # - Avoid duplication of: diff out.txt oracle.txt | grep "String" # - Make the script runnable from any directory # - Add an option --quick to only run quick tests (based on oracle.txt) # Upper bound for execution duration with the --quick option, in milliseconds max_quick_time=30000 # 'quick_flag' indicates if the option '--quick' is used, it is 'false' by default quick_flag=false # Set 'quick_flag' to 'true' if the option '--quick' is used if [ $# = 1 ] && [ $1 = "--quick" ];then     quick_flag=true fi # Display how to use this script if the current working directory</pre>
-</body>
-</html>
